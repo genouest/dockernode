@@ -13,3 +13,6 @@ RUN yum install -y ant python-pip python-virtualenv rvm make libxml2-devel
 
 RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 RUN ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
+
+RUN mkdir -p /softs/local
+RUN ln -s /softs/local  /local
